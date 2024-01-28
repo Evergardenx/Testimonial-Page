@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #fafaf9;
+  padding: 3rem 1rem;
+}
+
+section {
+  display: grid;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.reviewers .star {
+  background-color: #f5c04499;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.reviewers h1 {
+  font-size: 36px;
+  color: #18181b;
+  margin: 1rem 0;
+}
+
+.reviewers p {
+  color: #52525a;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.reviewers ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reviewers ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 14px;
+  color: #52525a;
+}
+
+.meta {
+  margin-top: 1rem;
+}
+
+.google,
+.meta {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.google div,
+.meta div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.google div img.google-img,
+.meta div img.meta-img {
+  width: 100px;
+  height: 30px;
+}
+
+.google ul,
+.meta ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google h2,
+.meta h2 {
+  color: #18181b;
+  font-size: 16px;
+  margin: 1rem 0 0.5rem;
+}
+
+.google p,
+.meta p {
+  color: #52525a;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    height: 100vh;
+  }
+
+  .google {
+    transform: translateX(20%);
+    width: 350px;
+  }
+
+  .meta {
+    transform: translateY(50%);
+    width: 350px;
+  }
+}
